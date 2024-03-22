@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     #Custom apps
     "core",
     "userauths"
+    
 ]
 
 MIDDLEWARE = [
@@ -135,13 +136,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 JAZZMIN_SETTINGS = {
-    "site_header":"OengaCenter",
-    "site_logo": 'assets/images/favicon.png',
-    "copyright": 'oenga-shop',
-    
-
+    "site_brand": "Africart Express Admin",
+    "site_logo": "assets/images/favicon.png",
+    "copyright": "africart express",
 }
-    
 
-    
-AUTH_USER_MODEL = 'userauths.models'
+AUTH_USER_MODEL = 'userauths.User'
